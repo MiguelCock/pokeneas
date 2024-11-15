@@ -10,6 +10,6 @@ func main() {
 
 	http.HandleFunc("/pokenea/image", image)
 
-	log.Println("Servidor iniciado en el puerto 8080")
+	log.Println("Servidor iniciado en el puerto 80")
 	log.Fatal(http.ListenAndServe(":80", nil))
 }
