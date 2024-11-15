@@ -1,6 +1,6 @@
-FROM golang:1.20-alpine
+FROM golang:1.23.2
 WORKDIR /app
 COPY . .
-RUN go build -o pokeneas
+RUN go build .
 EXPOSE 8080
 CMD ["./pokeneas"]
