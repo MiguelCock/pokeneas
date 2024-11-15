@@ -11,5 +11,5 @@ func main() {
 	http.HandleFunc("/pokenea/image", image)
 
 	log.Println("Servidor iniciado en el puerto 8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }

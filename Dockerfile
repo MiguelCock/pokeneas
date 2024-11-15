@@ -2,5 +2,5 @@ FROM golang:1.23.2
 WORKDIR /app
 COPY . .
 RUN go build .
-EXPOSE 8080
+EXPOSE 80
 CMD ["./pokeneas"]
